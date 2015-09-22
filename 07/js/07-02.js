@@ -1,0 +1,2 @@
+$('li em').addClass('seasonal'); /* Adds a calendar icon to fresh figs, because of the em tag. Adds the class seasonal. */
+$('li.hot').addClass('favorite'); /* Adds the heart icon to elements with a class of hot, and adds the class favorite. */
