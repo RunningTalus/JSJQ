@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>07-21 - Working With Forms</title>
+  <link rel="stylesheet" href="css/07.css" />
+</head>
+<body>
+<div id="page">
+  <h1 id="header">List</h1>
+  <h2>Buy Groceries</h2>
+  <ul>
+    <li id="one" class="hot"><em>fresh</em>&#32;figs</li>
+    <li id="two" class="hot">pine nuts</li>
+    <li id="three" class="hot">honey</li>
+    <li id="four">balsamic vinegar</li>
+  </ul>
+  <div id="newItemButton"><button href="#" id="showForm">new item</button></div>
+  <form id="newItemForm">
+    <input type="text" id="itemDescription" placeholder="Add description..." />
+    <input type="submit" id="addButton" value="add" />
+  </form>
+</div>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="js/07-21.js"></script>
+</body>
+</html>
