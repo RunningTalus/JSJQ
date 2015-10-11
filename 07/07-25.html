@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>07-25 - Loading jQuery from a CDN</title>
+</head>
+<body>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  <script>
+    window.jQuery || document.write('<script src="js-external/jquery-1.10.2.min.js"><\/script>')
+  </script>
+
+</body>
+</html>
+
+<!--Line #9 is a protocol relative URL-->
+<!--If the user is looking at the current page through https, then they will not see an error that tells them there are unsecure items on the page.-->
+<!--The second script tag contains a logical operator, which checks to see if jQuery has loaded.-->
+<!--If it exists, then a truthy value is returned and the logical operator short circuits.-->
+<!--If it has not loaded, the browser tries to load the jQuery script from the same server as the rest of the website.-->
+<!--The document.write() method is used to add a new script tag into the page.-->
+
+<!--WHY IS THIS IMPORTANT?-->
+<!--The fallback option is important because the CDN may be unavailable, the file may have moved, and some countries ban domain names (such as Google).-->
+
+<!--WHY ARE SCRIPTS PLACED BEFORE THE CLOSING </body> TAG?-->
+<!--The script is not blocking other things from downloading.-->
+<!--The DOM has already loaded by the time the script is executed.-->
