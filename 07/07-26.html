@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>07-26 - Example</title>
+  <link rel="stylesheet" href="css/07.css" />
+</head>
+<body>
+<div id="page">
+  <h1 id="header">List</h1>
+  <h2>Buy groceries <span id="counter"></span></h2>
+  <ul>
+    <li id="one" class="hot"><em>fresh</em>&#32;figs</li>
+    <li id="two" class="hot">pine nuts</li>
+    <li id="three" class="hot">honey</li>
+    <li id="four">balsamic vinegar</li>
+  </ul>
+  <div id="newItemButton"><button href="#" id="showForm">new item</button></div>
+  <form id="newItemForm">
+    <input type="text" id="itemDescription" placeholder="Add description" />
+    <input type="submit" id="add" value="add" />
+  </form>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js-external/jquery-1.11.3.min.js"><\/script>')</script>
+<script src="js/07-26.js"></script>
+</body>
+</html>
